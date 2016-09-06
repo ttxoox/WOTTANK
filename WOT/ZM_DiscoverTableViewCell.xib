@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZM_DiscoverTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AqZ-q2-ddF">
+                        <rect key="frame" x="8" y="13" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="Rya-PZ-lxa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIq-0F-hzg">
+                        <rect key="frame" x="27" y="0.0" width="143" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="143" id="6Fn-a5-xjU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou.png" translatesAutoresizingMaskIntoConstraints="NO" id="6gO-l0-tFr">
+                        <rect key="frame" x="296" y="14" width="16" height="16"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AqZ-q2-ddF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="32a-6B-ran"/>
+                    <constraint firstItem="AqZ-q2-ddF" firstAttribute="bottom" secondItem="6gO-l0-tFr" secondAttribute="bottom" constant="-1" id="FPD-Mg-NMC"/>
+                    <constraint firstItem="TIq-0F-hzg" firstAttribute="leading" secondItem="AqZ-q2-ddF" secondAttribute="trailing" constant="3" id="IyW-jH-55U"/>
+                    <constraint firstItem="AqZ-q2-ddF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Twj-tO-zf1"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="6gO-l0-tFr" secondAttribute="trailing" id="jlB-A2-HXg"/>
+                    <constraint firstItem="TIq-0F-hzg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jxL-9u-QO2"/>
+                    <constraint firstItem="AqZ-q2-ddF" firstAttribute="top" secondItem="6gO-l0-tFr" secondAttribute="top" constant="-1" id="lch-Lc-ocO"/>
+                    <constraint firstItem="TIq-0F-hzg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="m3w-XZ-WBt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="footerImgView" destination="6gO-l0-tFr" id="zDF-Rd-ecb"/>
+                <outlet property="headerImgView" destination="AqZ-q2-ddF" id="a7L-Rn-fyg"/>
+                <outlet property="titleLabel" destination="TIq-0F-hzg" id="odw-Uh-PK5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jiantou.png" width="16" height="16"/>
+    </resources>
+</document>

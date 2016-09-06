@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>首页</string>
+		<key>imgName</key>
+		<string>index_normal</string>
+		<key>selectImgName</key>
+		<string>index_press</string>
+		<key>clsName</key>
+		<string>IndexViewController</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>论坛</string>
+		<key>imgName</key>
+		<string>luntan_normal</string>
+		<key>selectImgName</key>
+		<string>luntan_press</string>
+		<key>clsName</key>
+		<string>FourmViewController</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>发现</string>
+		<key>imgName</key>
+		<string>discover_normal</string>
+		<key>selectImgName</key>
+		<string>dscover_press</string>
+		<key>clsName</key>
+		<string>DiscoverViewController</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>我的</string>
+		<key>imgName</key>
+		<string>account_normal</string>
+		<key>selectImgName</key>
+		<string>account_press</string>
+		<key>clsName</key>
+		<string>AccountViewController</string>
+	</dict>
+</array>
+</plist>

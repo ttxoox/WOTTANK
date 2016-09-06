@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZM_SearchViewController">
+            <connections>
+                <outlet property="searchBar" destination="t1U-48-01l" id="KyG-Uj-oZU"/>
+                <outlet property="tableView" destination="921-cf-egw" id="X5H-Gb-xHi"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="t1U-48-01l">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="921-cf-egw">
+                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="t1U-48-01l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5c5-6o-ZgN"/>
+                <constraint firstAttribute="bottom" secondItem="921-cf-egw" secondAttribute="bottom" id="5yJ-W4-O8l"/>
+                <constraint firstItem="t1U-48-01l" firstAttribute="trailing" secondItem="921-cf-egw" secondAttribute="trailing" id="BgZ-Jr-twV"/>
+                <constraint firstAttribute="trailing" secondItem="t1U-48-01l" secondAttribute="trailing" id="DdD-gd-SlA"/>
+                <constraint firstItem="t1U-48-01l" firstAttribute="leading" secondItem="921-cf-egw" secondAttribute="leading" id="V9F-ng-k0g"/>
+                <constraint firstItem="t1U-48-01l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fOL-zi-a1a"/>
+                <constraint firstItem="921-cf-egw" firstAttribute="top" secondItem="t1U-48-01l" secondAttribute="bottom" id="omq-83-rSm"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
