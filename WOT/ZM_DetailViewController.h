@@ -10,4 +10,5 @@
 
 @interface ZM_DetailViewController : UIViewController
 @property (nonatomic, strong)NSDictionary * dataDict;
+
 @end

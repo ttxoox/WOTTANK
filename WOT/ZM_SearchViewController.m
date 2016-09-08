@@ -26,7 +26,7 @@
     self.searchBar.showsCancelButton = NO;
     self.searchBar.delegate = self;
     self.dataList = [[NSMutableArray alloc] init];
-    
+    self.navigationItem.title = self.title;
 }
 #pragma mark - tableviewDelegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -62,6 +62,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     ZM_DetailViewController * dvc = [[ZM_DetailViewController alloc] init];
     dvc.dataDict = [self.dataList objectAtIndex:indexPath.row];
+    
     [self.navigationController pushViewController:dvc animated:YES];
 }
 #pragma mark - searchBarDelegate

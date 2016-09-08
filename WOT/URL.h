@@ -87,7 +87,7 @@
 
 //发现
 //1.查询战斗力
-#define QUEREY @"http://wotapp.duowan.com/index.php?r=m/home&pn=无名指上的纨绔&zone=0"
+#define QUEREY @"http://wotapp.duowan.com/index.php?r=m/home&pn=%@&zone=%@"
 //《pn为用户名》
 //searchList
 #define SEARCHLIST @"http://wotapp.duowan.com/index.php?r=api/searchPlayer&"
@@ -106,9 +106,9 @@
 //http://wotapp.duowan.com/index.php?r=m/home&pn=俺是土狼&zone=0
 
 //3.能力
-#define ABILITY @"http://wotapp.duowan.com/index.php?r=m/tanksAbility&pn=无名指上的纨绔&zone=0"
+#define ABILITY @"http://wotapp.duowan.com/index.php?r=m/tanksAbility&pn=%@&zone=%@"
 //4.数据
-#define BATTLEDATA @"http://wotapp.duowan.com/index.php?r=m/BattleData&pn=无名指上的纨绔&zone=0"
+#define BATTLEDATA @"http://wotapp.duowan.com/index.php?r=m/BattleData&pn=%@&zone=%@"
     
 //设置
 //妹子认证

@@ -79,6 +79,7 @@
     if (indexPath.section == 0) {
         if (indexPath.row == 0) {
             ZM_SearchViewController * svc = [[ZM_SearchViewController alloc] init];
+            svc.title = [[self.dataArray objectAtIndex:indexPath.section] objectAtIndex:indexPath.row];
             [self.navigationController pushViewController:svc animated:YES];
         }
     }
