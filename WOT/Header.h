@@ -14,11 +14,10 @@
 /*-------------------------------*/
 #import "ZM_ArticleViewController.h"
 #import "ZM_SearchViewController.h"
-
-
+#import "ZM_DetailViewController.h"
 /*-------------------------------*/
 #import "ZM_MenuView.h"
 #import "ZM_WebView.h"
 #import "ZM_DiscoverTableViewCell.h"
-
+#import "AFNetworking.h"
 #endif /* Header_h */

@@ -90,7 +90,7 @@
 #define QUEREY @"http://wotapp.duowan.com/index.php?r=m/home&pn=无名指上的纨绔&zone=0"
 //《pn为用户名》
 //searchList
-#define SEARCHLIST @" http://wotapp.duowan.com/index.php?r=api/searchPlayer&pn=无名指上的纨绔"
+#define SEARCHLIST @"http://wotapp.duowan.com/index.php?r=api/searchPlayer&"
 
 //2.排行榜
 #define PAIHANGBANG @"http://wotapp.duowan.com/index.php?r=m/rankList"

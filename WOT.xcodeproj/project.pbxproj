@@ -47,6 +47,7 @@
 		EC231FEB1D7E6E080068A508 /* jiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = EC231FEA1D7E6E080068A508 /* jiantou.png */; };
 		EC231FF41D7EA21C0068A508 /* ZM_SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC231FF21D7EA21C0068A508 /* ZM_SearchViewController.m */; };
 		EC231FF51D7EA21C0068A508 /* ZM_SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC231FF31D7EA21C0068A508 /* ZM_SearchViewController.xib */; };
+		EC6126161D816DB30034CA06 /* ZM_DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC6126151D816DB30034CA06 /* ZM_DetailViewController.m */; };
 		ECAD31501D7947E900AFCC9E /* ZM_WebView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD314F1D7947E900AFCC9E /* ZM_WebView.m */; };
 		ECAD31561D7954D500AFCC9E /* ZM_NavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECAD31551D7954D500AFCC9E /* ZM_NavigationViewController.m */; };
 		ECAD315A1D7961FB00AFCC9E /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = ECAD31591D7961FB00AFCC9E /* share.png */; };
@@ -129,6 +130,8 @@
 		EC231FF11D7EA21C0068A508 /* ZM_SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZM_SearchViewController.h; sourceTree = "<group>"; };
 		EC231FF21D7EA21C0068A508 /* ZM_SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZM_SearchViewController.m; sourceTree = "<group>"; };
 		EC231FF31D7EA21C0068A508 /* ZM_SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZM_SearchViewController.xib; sourceTree = "<group>"; };
+		EC6126141D816DB30034CA06 /* ZM_DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZM_DetailViewController.h; sourceTree = "<group>"; };
+		EC6126151D816DB30034CA06 /* ZM_DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZM_DetailViewController.m; sourceTree = "<group>"; };
 		ECAD314E1D7947E900AFCC9E /* ZM_WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZM_WebView.h; sourceTree = "<group>"; };
 		ECAD314F1D7947E900AFCC9E /* ZM_WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZM_WebView.m; sourceTree = "<group>"; };
 		ECAD31541D7954D500AFCC9E /* ZM_NavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZM_NavigationViewController.h; sourceTree = "<group>"; };
@@ -267,6 +270,8 @@
 				EC231FF11D7EA21C0068A508 /* ZM_SearchViewController.h */,
 				EC231FF21D7EA21C0068A508 /* ZM_SearchViewController.m */,
 				EC231FF31D7EA21C0068A508 /* ZM_SearchViewController.xib */,
+				EC6126141D816DB30034CA06 /* ZM_DetailViewController.h */,
+				EC6126151D816DB30034CA06 /* ZM_DetailViewController.m */,
 			);
 			name = "发现";
 			sourceTree = "<group>";
@@ -580,6 +585,7 @@
 				ECAD31561D7954D500AFCC9E /* ZM_NavigationViewController.m in Sources */,
 				EC231FDC1D7E5F200068A508 /* ZM_DiscoverTableViewCell.m in Sources */,
 				ECE585271D757E4B0016C8BF /* AppDelegate.m in Sources */,
+				EC6126161D816DB30034CA06 /* ZM_DetailViewController.m in Sources */,
 				EC078D5C1D76738E0062BF9D /* AccountViewController.m in Sources */,
 				EC231FF41D7EA21C0068A508 /* ZM_SearchViewController.m in Sources */,
 				EC078D681D76DF390062BF9D /* ZM_ArticleViewController.m in Sources */,

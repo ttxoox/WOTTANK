@@ -21,19 +21,27 @@
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="921-cf-egw">
-                    <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                    <rect key="frame" x="0.0" y="44" width="600" height="500"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="921-cf-egw" secondAttribute="trailing" id="3y0-cL-r8e"/>
                 <constraint firstItem="t1U-48-01l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5c5-6o-ZgN"/>
-                <constraint firstAttribute="bottom" secondItem="921-cf-egw" secondAttribute="bottom" id="5yJ-W4-O8l"/>
+                <constraint firstAttribute="bottom" secondItem="921-cf-egw" secondAttribute="bottom" constant="56" id="5yJ-W4-O8l"/>
+                <constraint firstItem="t1U-48-01l" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9jm-lI-V09"/>
+                <constraint firstItem="921-cf-egw" firstAttribute="top" secondItem="t1U-48-01l" secondAttribute="bottom" id="9tA-Kk-pMx"/>
                 <constraint firstItem="t1U-48-01l" firstAttribute="trailing" secondItem="921-cf-egw" secondAttribute="trailing" id="BgZ-Jr-twV"/>
                 <constraint firstAttribute="trailing" secondItem="t1U-48-01l" secondAttribute="trailing" id="DdD-gd-SlA"/>
+                <constraint firstAttribute="bottom" secondItem="921-cf-egw" secondAttribute="bottom" constant="56" id="Eb9-TC-Kct"/>
+                <constraint firstAttribute="trailing" secondItem="t1U-48-01l" secondAttribute="trailing" id="GvD-q1-N6e"/>
+                <constraint firstItem="921-cf-egw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="O5E-Ku-X9g"/>
                 <constraint firstItem="t1U-48-01l" firstAttribute="leading" secondItem="921-cf-egw" secondAttribute="leading" id="V9F-ng-k0g"/>
                 <constraint firstItem="t1U-48-01l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fOL-zi-a1a"/>
+                <constraint firstItem="t1U-48-01l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h8n-ec-eTU"/>
                 <constraint firstItem="921-cf-egw" firstAttribute="top" secondItem="t1U-48-01l" secondAttribute="bottom" id="omq-83-rSm"/>
+                <constraint firstItem="921-cf-egw" firstAttribute="top" secondItem="t1U-48-01l" secondAttribute="bottom" id="xR9-DY-4oy"/>
             </constraints>
         </view>
     </objects>
