@@ -43,6 +43,8 @@ typedef enum enum_URLTYPE{
     if (app.page >= 0) {
         UIBarButtonItem * rightBarItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"share"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick)];
         self.navigationItem.rightBarButtonItem = rightBarItem;
+        self.hidesBottomBarWhenPushed = YES;
+        self.tabBarController.tabBar.hidden = YES;
     }
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[[UIImage imageNamed:@"back"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal] style:UIBarButtonItemStylePlain target:self action:@selector(leftClick:)];
 }
@@ -55,8 +57,7 @@ typedef enum enum_URLTYPE{
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlStr]]];
     [self.view addSubview:self.webView];
     
-    self.hidesBottomBarWhenPushed = YES;
-    self.tabBarController.tabBar.hidden = YES;
+    
 }
 
 -(void)rightItemClick

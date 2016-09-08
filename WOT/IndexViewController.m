@@ -17,6 +17,14 @@
     AppDelegate * app;
     UILabel * label;
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    if (app.page < 0) {
+        self.tabBarController.tabBar.hidden = NO;
+        self.hidesBottomBarWhenPushed = NO;
+    }
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
