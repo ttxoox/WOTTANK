@@ -36,6 +36,7 @@
 		EC078D5C1D76738E0062BF9D /* AccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC078D5B1D76738E0062BF9D /* AccountViewController.m */; };
 		EC078D601D76785A0062BF9D /* ZM_MenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC078D5F1D76785A0062BF9D /* ZM_MenuView.m */; };
 		EC078D681D76DF390062BF9D /* ZM_ArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC078D671D76DF390062BF9D /* ZM_ArticleViewController.m */; };
+		EC1368631D82573D004828DE /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1368621D82573C004828DE /* TestViewController.m */; };
 		EC1642C51D79867500438242 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1642C41D79867500438242 /* back.png */; };
 		EC1642C71D798B7900438242 /* Asset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC1642C61D798B7900438242 /* Asset.xcassets */; };
 		EC231FDC1D7E5F200068A508 /* ZM_DiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC231FDA1D7E5F200068A508 /* ZM_DiscoverTableViewCell.m */; };
@@ -117,6 +118,8 @@
 		EC078D621D76D47F0062BF9D /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		EC078D661D76DF390062BF9D /* ZM_ArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZM_ArticleViewController.h; sourceTree = "<group>"; };
 		EC078D671D76DF390062BF9D /* ZM_ArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZM_ArticleViewController.m; sourceTree = "<group>"; };
+		EC1368611D82573C004828DE /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		EC1368621D82573C004828DE /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EC1642C41D79867500438242 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		EC1642C61D798B7900438242 /* Asset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Asset.xcassets; sourceTree = "<group>"; };
 		EC231FD91D7E5F200068A508 /* ZM_DiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZM_DiscoverTableViewCell.h; sourceTree = "<group>"; };
@@ -272,6 +275,8 @@
 				EC231FF31D7EA21C0068A508 /* ZM_SearchViewController.xib */,
 				EC6126141D816DB30034CA06 /* ZM_DetailViewController.h */,
 				EC6126151D816DB30034CA06 /* ZM_DetailViewController.m */,
+				EC1368611D82573C004828DE /* TestViewController.h */,
+				EC1368621D82573C004828DE /* TestViewController.m */,
 			);
 			name = "发现";
 			sourceTree = "<group>";
@@ -582,6 +587,7 @@
 			files = (
 				EC078D591D7673750062BF9D /* DiscoverViewController.m in Sources */,
 				EC078D561D76735D0062BF9D /* FourmViewController.m in Sources */,
+				EC1368631D82573D004828DE /* TestViewController.m in Sources */,
 				ECE5852A1D757E4B0016C8BF /* IndexViewController.m in Sources */,
 				ECAD31561D7954D500AFCC9E /* ZM_NavigationViewController.m in Sources */,
 				EC231FDC1D7E5F200068A508 /* ZM_DiscoverTableViewCell.m in Sources */,

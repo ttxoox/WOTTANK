@@ -16,6 +16,6 @@
 
 @property (nonatomic, assign)id<ZM_MenuViewProtocol> delegate;
 
--(void)setMenueWithArray:(NSArray *)nameArray;
+-(void)setMenueWithArray:(NSArray *)nameArray selectColor:(UIColor *)selectColor andDeselectColor:(UIColor *)deSelectColor;
 
 @end

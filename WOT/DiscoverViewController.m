@@ -8,6 +8,7 @@
 
 #import "DiscoverViewController.h"
 #import "Header.h"
+#import "TestViewController.h"
 @interface DiscoverViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong)UITableView * tableView;
 @property (nonatomic, strong)NSMutableArray * dataArray;

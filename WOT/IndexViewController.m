@@ -40,7 +40,7 @@
     NSArray * array = @[@"资讯",@"视频"];
     menuView.backgroundColor = [UIColor colorWithRed:45/255.0f green:42/255.0f blue:43/255.0f alpha:1.0f];
     menuView.delegate = self;
-    [menuView setMenueWithArray:array];
+    [menuView setMenueWithArray:array selectColor:[UIColor whiteColor] andDeselectColor:[UIColor redColor]];
     [self.view addSubview:menuView];
 }
 #pragma mark - ZM_MenuViewProtocol
@@ -99,6 +99,7 @@
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+    label.text = nil;
 //    label.center = self.view.center;
     label.text = @"加载失败，请重试！";
     label.textColor = [UIColor blackColor];

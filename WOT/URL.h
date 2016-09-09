@@ -103,7 +103,7 @@
 //我的
 //1.登录
 //2.战绩 QUERY
-//http://wotapp.duowan.com/index.php?r=m/home&pn=俺是土狼&zone=0
+//http://wotapp.duowan.com/index.php?r=m/home&pn=%@&zone=0
 
 //3.能力
 #define ABILITY @"http://wotapp.duowan.com/index.php?r=m/tanksAbility&pn=%@&zone=%@"

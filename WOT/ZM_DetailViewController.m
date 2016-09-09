@@ -10,6 +10,7 @@
 #import "Header.h"
 @interface ZM_DetailViewController ()<UIWebViewDelegate,ZM_MenuViewProtocol>
 @property (nonatomic, strong)UIWebView * webView;
+@property (nonatomic, strong)UIScrollView * scrollView;
 @property (nonatomic, assign)NSNumber * zone;
 @property (nonatomic, copy)NSString * pn;
 @end
@@ -23,37 +24,35 @@
     self.zone = self.dataDict[@"zone"];
     self.pn = self.dataDict[@"pn"];
     self.navigationItem.title = self.pn;
-    ZM_MenuView * menuView = [[ZM_MenuView alloc] initWithFrame:CGRectMake(0, 10, self.view.frame.size.width, 40)];
+    //处理pn
+    self.pn = [self.pn stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    ZM_MenuView * menuView = [[ZM_MenuView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
     NSArray * array = @[@"战绩",@"能力",@"数据"];
     menuView.backgroundColor = [UIColor whiteColor];
     menuView.delegate = self;
-    [menuView setMenueWithArray:array];
+    [menuView setMenueWithArray:array selectColor:[UIColor blackColor] andDeselectColor:[UIColor redColor]];
     [self.view addSubview:menuView];
     [self createWebViewWithTag:0];
-//    menuView.frame = 
-//    self.navigationItem.title = self.title;
 }
 -(void)createWebViewWithTag:(NSInteger)tag
 {
    self.webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 40, self.view.bounds.size.width, self.view.bounds.size.height)];
     self.webView.delegate = self;
-    
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     switch (tag) {
         case 0:
         {
-            NSLog(@"%@",[NSString stringWithFormat:QUEREY,self.pn,self.zone]);
             [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:QUEREY,self.pn,self.zone]]]];
            break;
         }
         case 1:
         {
-            NSLog(@"%@",[NSString stringWithFormat:ABILITY,self.pn,self.zone]);
             [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:ABILITY,self.pn,self.zone]]]];
             break;
         }
         case 2:
         {
-            NSLog(@"%@",[NSString stringWithFormat:BATTLEDATA,self.pn,self.zone]);
+        
             [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:BATTLEDATA,self.pn,self.zone]]]];
             break;
         }
@@ -64,16 +63,20 @@
 }
 -(void)webViewDidStartLoad:(UIWebView *)webView
 {
-    NSLog(@"%s",__func__);
+    
 }
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    NSLog(@"%s",__func__);
+    NSLog(@"%f",webView.frame.size.height);
+    NSLog(@"%f",self.view.frame.size.height);
 }
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
-    NSLog(@"%s",__func__);
     return YES;
+}
+-(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    NSLog(@"%@",error.localizedDescription);
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
