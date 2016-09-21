@@ -435,7 +435,6 @@
 				TargetAttributes = {
 					ECE5851E1D757E490016C8BF = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = WNJZPN25LZ;
 					};
 					ECE585371D757E4B0016C8BF = {
 						CreatedOnToolsVersion = 7.3;
